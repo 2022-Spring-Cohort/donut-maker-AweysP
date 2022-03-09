@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Clicker</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container__main">
+      <canvas id="canvas" width="100" height="100"></canvas>
       <div class="containerAutoClicker">
 
           <p class="costOfAutoClicker"> Cost: 100 Donuts</p>
@@ -19,15 +21,17 @@
     <input type="text" class="donut" >
     <p class="donutsPerSecond">0 donuts per second</p>
 
-    <a  class ="clicker"><img src="/pics/pink-donut-png-11552131674j5qe2vtvqf.png" ></a>
+    <a  class ="clicker"><img src="/pics/animatedPink.png" ></a>
 
     <div class="container__main__multi">
-      <p class="priceMultiplier">Cost: 10 Cookies</p>
+      <p class="priceMultiplier">Cost: 175 Cookies</p>
       <p class="numberOfMultipliers"> You Have 0 Multipliers.</p>
       <button type="button" id="purchaseMultipliers" >Buy Multiplier</button>
 
   </div>
 </div>
     <script src="./js/app.js" type ="module"></script>
+    <script src="./js/particle.js" type ="module"></script>
+    <script src="./js/ClickCounter.js" type ="module"></script>
   </body>
 </html>

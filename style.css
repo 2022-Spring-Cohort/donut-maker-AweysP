@@ -1,0 +1,9 @@
+#canvas{
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+}
+.container__main{
+    display: flexbox;
+
+}
