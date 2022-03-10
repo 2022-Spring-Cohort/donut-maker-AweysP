@@ -9,36 +9,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E
+<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bungee+Inline&family=Patrick+Hand&family=Urbanist&display=swap" rel="stylesheet">
     
   </head>
   <body class="container">
-    <div class="container__main">
-      <!-- <canvas id="canvas" ></canvas> -->
-      <div class="containerAutoClicker">
+    <header class="header">
+      <div class="headerStuff">
+        <h3 class="nav">Company Info
+          <span class="companyinfo">Fred the Baker Baking Company wanted his own cookie clicker game but with donuts instead</span>
+        </h3>
+        <div class="tributelink"><a href="https://cookie-clicker.co/"><h3>Tribute to The Cookie Clicker</h3></a></div>
 
-          <p class="costOfAutoClicker"> Cost: 100 Donuts</p>
-          <p class="numberOfAutoClicker">You Have 0 Auto Clickers.</p>
-          <button type="button" id="purchaseAutoClicker"  >Buy Auto Clicker</button>
+        <h3 class="nav">About Me
+          <span class ="companyinfo"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia harum nobis quas libero tempore ipsam omnis aut, iste autem dolor alias similique officia neque, numquam non iusto, sapiente nisi nihil.</span>
+        </h3>
       </div>
+    </header>
+    <div class="containermain">
+      <h1 class="title">Donut Clicker Game!</h1>
+    <!-- <canvas id="canvas" ></canvas> -->
     <div class="container_donut"></div>
-    <h1 class="title">Donut Clicker Game!</h1>
-    <input type="text" class="donut" >
-    <p class="donutsPerSecond">0 donuts per second</p>
+  <input type="text" class="donut" >
+  <p class="donutsPerSecond">0 donuts per second</p>
 
-    <a  class ="clicker"><img id="center" src="/pics/animatedPink.png" ></a>
+  <a  class ="clicker"><img id="center" src="/pics/realone.png" ></a>
 
-    <div class="container__main__multi">
-      <p class="priceMultiplier">Cost: 175 Cookies</p>
-      <p class="numberOfMultipliers"> You Have 0 Multipliers.</p>
-      <button type="button" id="purchaseMultipliers" >Buy Multiplier</button>
+  <div class="containermain__multi">
+    <p class="priceMultiplier">Cost: 175 Cookies</p>
+    <p class="numberOfMultipliers"> You Have 0 Multipliers.</p>
+    <button type="button" id="purchaseMultipliers" >Buy Multiplier</button>
 
-  </div>
 </div>
-    <script src="./js/app.js" type ="module"></script>
-    <!-- <script src="./js/particle.js" type ="module"></script> -->
-    <script src="./js/ClickCounter.js" type ="module"></script>
-  </body>
+    <div class="containerAutoClicker">
+
+        <p class="costOfAutoClicker"> Cost: 100 Donuts</p>
+        <p class="numberOfAutoClicker">You Have 0 Auto Clickers.</p>
+        <button type="button" id="purchaseAutoClicker"  >Buy Auto Clicker</button>
+    </div>
+</div>
+  <script src="./js/app.js" type ="module"></script>
+  <!-- <script src="./js/particle.js" type ="module"></script> -->
+  <script src="./js/ClickCounter.js" type ="module"></script>
+</body>
 </html>
