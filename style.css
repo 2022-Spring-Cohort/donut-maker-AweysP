@@ -6,6 +6,7 @@
     background-color: paleturquoise;
     font-family: 'Roboto', sans-serif;
     position:absolute;
+    flex-wrap: wrap;
 
 }
 .header{
@@ -54,11 +55,13 @@
     -webkit-text-stroke-color: rgb(35, 39, 63);
     width: auto;
     height: auto;
-    font-size: 50px;
+    font-size: 80px;
     font-family: 'Bungee Inline', cursive;
     text-align: center;
     display: flex;
     justify-content: center;
+    margin-left: 250px;
+    margin-right: 250px;
 
 
 }
@@ -85,8 +88,9 @@
 .donutsPerSecond{
     font-family: 'Love Ya Like A Sister', cursive;
 }
-.containermainmulti{
+.containermain_multi{
     font-family: 'Love Ya Like A Sister', cursive;
+    margin-left: 1100px;
 }
 button {
     background-color: lightgray;
@@ -103,9 +107,10 @@ button {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 200px;
-    height: 200px;
+    width: 375px;
+    height: 375px;
     bottom: 0;
+    margin-left: 850px;
 
 }
 
@@ -134,4 +139,7 @@ a{
 }
 .nav >.companyinfo:hover {
     cursor: pointer;
+}
+.container_donut{
+    margin-left: 850px;
 }
