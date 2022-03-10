@@ -1,6 +1,6 @@
-import {
-    spawnSpinningDonut,
-} from "./particle.js";
+// import {
+//     spawnSpinningDonut,
+// } from "./particle.js";
 import {
     ClickCounter
 } from "./ClickCounter.js";
@@ -25,7 +25,7 @@ const multiplierEl = document.querySelector('#purchaseMultipliers');
 
 clickerEl.addEventListener('click', ()=>{
     donutCount += Math.pow(multiplier,power)
-    spawnSpinningDonut;
+    // spawnSpinningDonut;
     updateDash();
 })
 
