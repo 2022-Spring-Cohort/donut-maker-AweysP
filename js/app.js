@@ -30,6 +30,8 @@ resetEl.addEventListener('click', ()=>{
     multiplierClick =0;
     donutCount = 0;
     power=0
+    priceMultiplier=.10
+    multiplier =1.2
     
 
     updateDash();
@@ -88,5 +90,5 @@ function updateDash() {
     document.querySelector("#purchaseAutoClicker").style.backgroundColor = (donutCount < 100) ? "gray" : "white";
     document.querySelector("#purchaseMultipliers").style.backgroundColor = (donutCount < 10) ? "gray" : "white";
 
-    document.querySelector('.donutsPerSecond').innerHTML = Math.floor(((autoClick+multiplierClick) * multiplier)) + " donuts per second";
+    document.querySelector('.donutsPerSecond').innerHTML = Math.floor((autoClick+multiplierClick)) + " donuts per second";
 }
