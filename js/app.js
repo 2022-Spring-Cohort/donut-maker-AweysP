@@ -9,8 +9,8 @@ let autoClick =0 ;
 let multiplierClick = 0;
 let multiplier = 1.2;
 let power = 0;
-let autoClickerCost = 10;
-let multiplierCost = 15;
+let autoClickerCost = 100;
+let multiplierCost = 10;
 let priceMultiplier = .10;
 let donutCount = Math.pow(multiplier,power)
 let value = 0;
@@ -21,7 +21,17 @@ console.log(ClickCounter)
 const clickerEl = document.querySelector('.clicker');
 const autoClickerEl=document.querySelector('#purchaseAutoClicker');
 const multiplierEl = document.querySelector('#purchaseMultipliers');
+const resetEl = document.querySelector('.resetbtn');
 
+resetEl.addEventListener('click', ()=>{
+    donutCount = 0;
+    autoClick = 0;
+    autoClickerCost = 100;
+    multiplierCost = 10;
+    multiplierClick = 0;
+
+    updateDash();
+})
 
 clickerEl.addEventListener('click', ()=>{
     donutCount += Math.pow(multiplier,power)
@@ -53,6 +63,7 @@ function timer() {
     donutCount = donutCount + multiplierClick;
     updateDash()
 };
+
 setInterval(timer, 1000)
 
 
@@ -72,8 +83,8 @@ function updateDash() {
     document.querySelector('.numberOfMultipliers').innerHTML = "You Have " + multiplierClick + " Multipliers.";
    
 
-    document.querySelector("#purchaseAutoClicker").innerHTML = (donutCount < 100) ? "Buy Auto Clicker" : "Buy Auto Clicker";
-    document.querySelector("#purchaseMultipliers").innerHTML = (donutCount < 25)? "Buy Auto Multiplier" : "Buy Auto Multiplier";
+    document.querySelector("#purchaseAutoClicker").style.backgroundColor = (donutCount < 100) ? "gray" : "white";
+    document.querySelector("#purchaseMultipliers").style.backgroundColor = (donutCount < 10) ? "gray" : "white";
 
     document.querySelector('.donutsPerSecond').innerHTML = Math.floor(((autoClick+multiplierClick) * multiplier)) + " donuts per second";
 }
