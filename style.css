@@ -149,9 +149,7 @@ input {
     margin-left:920px;
 }
 a:hover{
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+    color: aquamarine;
 }
 .span{
     background-color:none;
@@ -172,4 +170,7 @@ a:hover{
     margin-right: 3em;
     font-style: bold;
     
+}
+a{
+    text-decoration: none;
 }

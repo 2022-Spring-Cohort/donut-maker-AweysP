@@ -24,11 +24,13 @@ const multiplierEl = document.querySelector('#purchaseMultipliers');
 const resetEl = document.querySelector('.resetbtn');
 
 resetEl.addEventListener('click', ()=>{
-    donutCount = 0;
     autoClick = 0;
     autoClickerCost = 100;
     multiplierCost = 10;
-    multiplierClick = 0;
+    multiplierClick =0;
+    donutCount = 0;
+    power=0
+    
 
     updateDash();
 })
