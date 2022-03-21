@@ -1,0 +1,176 @@
+.container{
+    height: 100vh;
+    margin: 0px auto;
+    display: flexwrap;
+    background-color: paleturquoise;
+    font-family: 'Roboto', sans-serif;
+    position:absolute;
+
+}
+.header{
+
+    position:absolute;
+    width: 2000px;
+    height: 80px;
+    top: 0;
+    background-color: slategray;
+    text-align: center;
+    border: solid;
+}
+.headerStuff{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.nav {
+    position: relative;
+    display: inline-block;
+}
+.nav .companyinfo{
+    visibility: hidden;
+    background-color: ivory;
+    text-align: left;
+    padding: 5px 0;
+    border-radius:  2px;
+    position:absolute;
+    z-index: 1;
+    width: 300px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+}
+
+.nav:hover .companyinfo{
+    visibility: visible;
+}
+.title{
+    border-width: 5px;
+    border-style: none;
+    background-color:cornsilk;
+    color: rgb(192, 197, 201);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(35, 39, 63);
+    width: 100%;
+    height: 150px;
+    font-size: 80px;
+    font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+.containerAutoClicker{
+    border-width: 3px;
+    border-style: none;
+    width: auto;
+    height: 100px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    display:flex;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    align-content:center;
+    margin-left: 490px;
+}
+.costOfAutoClicker{
+    margin-left: 50px;
+}
+.numberOfAutoClicker{
+    margin-left:80px;
+    position:absolute;
+    right:0;
+    margin-right: 40px;
+}
+.containerAutoClicker>button{
+    width:200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left:200px;
+}
+.donutsPerSecond{
+    font-family: 'Love Ya Like A Sister', cursive;
+    border-style: none;
+    width: auto;
+    height: 100px;
+    margin-left: 885px;
+
+}
+.containermain__multi{
+    border-width: 3px;
+    border-style: none;
+    width: auto;
+    height: 100px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    display:flex;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    align-content:center;
+    margin-left: 490px;
+}
+.containermain__multi>button{
+    width:200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left:240px;
+}
+.numberOfMultipliers{
+    margin-left:80px;
+    position:absolute;
+    right:0;
+    margin-right: 40px;
+}
+button {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: bold;
+    padding: 3px;
+    margin-right: 3em;
+    font-style: bold;
+}
+.clicker{
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    bottom: 0;
+    margin-left:750px; 
+}
+
+input {
+    font-size: 30px;
+    font-weight: bold;
+   border: none;
+   border-color: transparent;
+    height: 30px;
+    background-color: paleturquoise;
+    margin-left:920px;
+}
+a:hover{
+    color: aquamarine;
+}
+.span{
+    background-color:none;
+    color:white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightgray;
+}
+.resetbtn{
+    margin-left: 950px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: bold;
+    padding: 3px;
+    margin-right: 3em;
+    font-style: bold;
+    
+}
+a{
+    text-decoration: none;
+}

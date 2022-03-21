@@ -5,9 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donut Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Bungee+Inline&family=Patrick+Hand&family=Urbanist&display=swap" rel="stylesheet">
+    
   </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
-  </body>
+  <body class="container">
+    <header class="header">
+      <div class="headerStuff">
+        <h3 class="nav">Company Info
+          <span class="companyinfo">As the game designer, I want to give gamers a reference to our inspiration, the original Cookie Clicker game, so that the legal department will stop complaining that we stole the idea</span>
+        </h3>
+        <div class="tributelink"><a href="https://cookie-clicker.co/"><h3>Tribute to The Cookie Clicker</h3></a></div>
+
+        <h3 class="nav">About Me
+          <span class ="companyinfo">My name is Aweys Pemba and coding is my passion. Here is my github page <a href="https://github.com/AweysP" >here</a> as well as my portfolio
+          <a href="https://aweysp.github.io/" >here</a> </span>
+        </h3>
+      </div>
+    </header>
+    <div class="containermain">
+      <h1 class="title">Donut Clicker Game!</h1>
+    <!-- <canvas id="canvas" ></canvas> -->
+    <div class="container_donut"></div>
+
+  <div class="containermain__multi">
+    <p class="priceMultiplier">Cost: 175 Cookies</p>
+    <button type="button" id="purchaseMultipliers" >Buy Multiplier</button>
+    <p class="numberOfMultipliers"> You Have 0 Multipliers.</p>
+
+</div>
+
+<input type="text" class="donut" >
+<p class="donutsPerSecond">0 donuts per second</p>
+  <a  class ="clicker"><img id="center" src="/pics/realone.png" ></a>
+
+    <div class="containerAutoClicker">
+
+        <p class="costOfAutoClicker"> Cost: 100 Donuts</p>
+        <button type="button" id="purchaseAutoClicker"  >Buy Auto Clicker</button>
+        <p class="numberOfAutoClicker">You Have 0 Auto Clickers.</p>
+    </div>
+    <div id="restarting">
+  <button type="button" class="resetbtn">Reset</button>
+</div>
+    
+</div>
+  <script src="./js/app.js" type ="module"></script>
+  <!-- <script src="./js/particle.js" type ="module"></script> -->
+  <script src="./js/ClickCounter.js" type ="module"></script>
+</body>
 </html>
